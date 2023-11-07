@@ -13,8 +13,6 @@ https://teamsarose.github.io/
 
 ## Technologies Used
 Here are the technologies and tools I used to create this portfolio:
-## Technologies Used
-Here are the technologies and tools I used to create this portfolio:
 - HTML5
 - CSS3
 - JavaScript (Vanilla JS)
