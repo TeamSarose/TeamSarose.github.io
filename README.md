@@ -1,9 +1,10 @@
-# Sarose's Portfolio
-<h3>Welcome to my personal portfolio project!</h3>
+# My Personal Portfolio
+Welcome to my personal portfolio! This is where I showcase my work and provide information about myself.
 
-<h4>It's built using vanilla HTML, CSS, and some animations with vanilla JavaScript.</h4>
+# Demo
+You can check out my portfolio live at the following link:
+https://teamsarose.github.io/
 
-<h4>You can check out my portfolio live at the following link: https://teamsarose.github.io/ </h4>
 
 ## Technologies Used
 
