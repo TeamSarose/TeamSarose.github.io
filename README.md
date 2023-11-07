@@ -5,3 +5,11 @@
 
 <h4>You can check out my portfolio live at the following link: https://teamsarose.github.io/ </h4>
 
+## Technologies Used
+
+Here are the technologies and tools I used to create this portfolio:
+
+- HTML5
+- CSS3
+- JavaScript (Vanilla JS)
+
