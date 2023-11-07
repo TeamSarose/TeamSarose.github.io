@@ -1,4 +1,4 @@
-# My Personal Portfolio
+# My Portfolio
 Welcome to my personal portfolio! This is where I showcase my work and provide information about myself.
 
 ## Demo
