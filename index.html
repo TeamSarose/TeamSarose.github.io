@@ -2,42 +2,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sarose-Portfolio</title>
+    <title>Sarose - Portfolio</title>
     <link rel="stylesheet" href="styles.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
-    <header>  <!-- Header Section -->
-        <h1 id="logo">Sarose</h1>
+    <header>
         <nav>
-            <a href="#" class="active">Home</a>
-            <a href="#">About</a>
-            <a href="#">Projects</a>
-            <a href="#">Contact Me</a>
+            <div id="name"><a href="" class="logo">Sarose</a></div>
+            <ul class="showMenu">
+                <li><a href="" class="active">Home</a></li>   <!-- Navigation Bar-->
+                <li><a href="">About</a></li>
+                <li><a href="">Projects</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+            <div class="menu">                                  <!-- Humburger Icon-->
+                <div class="menu-line"></div>
+                <div class="menu-line"></div>
+                <div class="menu-line"></div>
+            </div>
         </nav>
     </header>
 
-    <div class="text-box">   <!-- Main Content -->
-        <h1>Hi, I'm Rahfath Sarose</h1>
-        <h1>
-            <span class="skills">Full-Stake Developer</span>
-        </h1>
-        <p>Iam Rahfath Sarose, BSE undergraduate with a coding curiosity and digital marketing passion. Proficient in graphic design, eager to blend technology and creativity. Enthusiastic about computer hardware and committed to continuous learning. Seeking dynamic opportunities to contribute and learn in a tech-driven environment.</p>
+    <div class="container">      <!-- Main Container -->
 
-        <div class="icon-box">  <!-- Adding icons -->            
-            <a href="https://www.linkedin.com/in/teamsarose" target="_blank"><i class='bx bxl-linkedin'></i></a>
-            <a href="https://github.com/TeamSarose" target="_blank"><i class='bx bxl-github'></i></a>
-            <a href=""><i class='bx bxl-gmail'></i></a>
+        <div class="text-box">   <!-- Main Content -->
+            <h1>Hi, I'm Rahfath Sarose</h1>
+            <h1>
+                <span class="skills">Full-Stake Developer</span>
+            </h1>
+            <p>Iam Rahfath Sarose, BSE Undergraduate with a Coding Curiosity and Digital Marketing Passion. Proficient in Graphic Design, Eager to Blend Technology and Creativity. Enthusiastic about Computer Hardware and Committed to Continuous Learning. Seeking Dynamic Opportunities to Contribute and Learn in a Tech-Driven Environment.</p>
+    
+            <div class="icon-box">  <!-- Adding icons -->            
+                <a href="https://www.linkedin.com/in/teamsarose" target="_blank"><i class='bx bxl-linkedin'></i></a>
+                <a href="https://github.com/TeamSarose" target="_blank"><i class='bx bxl-github'></i></a>
+                <a href=""><i class='bx bxl-gmail'></i></a>
+            </div>
+            <!-- Adding buttons -->
+            <div class="btn">
+                <a href="media/M.R._Rahfath Sarose_Resume.pdf" download="Sarose_Resume"> <button class="downloadBtn">Download CV</button> </a>  
+                <button class="contactBtn">Contact Me</button>
+            </div>
+            
         </div>
-        <!-- Adding buttons -->
-        <a href="media/M.R._Rahfath Sarose_Resume.pdf" download="Sarose_Resume"><button class="downloadBtn">Download CV</button></a>  
-        <button class="contactBtn">Contact Me</button>
-    </div>
+    
+        <div class="img-box">   <!-- Adding Images -->
+            <img src="media/Profile.png" alt="" >
+        </div>
 
-    <div class="img-box">   <!-- Adding Images -->
-        <img src="media/Profile.png" alt="" >
     </div>
+    
+    
 <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
-<script src="script.js"></script>   
+<script src="script.js"></script> 
 </body>
 </html>

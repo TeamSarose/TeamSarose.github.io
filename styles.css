@@ -7,75 +7,149 @@
     --backgroud-color: #04364A;
 }
 
-body{             /* Styling Body */
+body{             /* Main Body */
+    margin: 0;
+    padding: 0;
+    background-color: var(--backgroud-color);
+    height: 100vh;
+}
+
+.container{
     display:flex;
     justify-content: start;
     align-items: center;
-    min-height: 100vh;
     overflow: hidden;
-    background-color: var(--backgroud-color);
 }
 
-header{           /* Styling header section */
-    display:flex;
-    justify-content: space-between;
-    position: fixed;
-    top: 0;
-    left: 0;
+header nav{  
+    display: flex;               /*  Full Navigation Part */
+    background-color: #065474;
+    font-size: 23px;
     width: 100%;
-    height: 80px;
-    padding: 0px 80px;
     align-items: center;
-    color:white;
+    justify-content: space-around;
 }
 
-header nav{            /* Styling navigation bar */
-    display: flex;
-    margin-right: 150px;
-    width: 40%;
-    justify-content: space-between;
-    align-items:center;
-}
-
-header nav a{    
-    display: flex;      /* Styling links */
-    color: white;
+nav a{                      /* Styling the Navigation link */
     text-decoration: none;
-    font-size: 22px;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     position: relative;
-    justify-content: center;
 }
 
-.active{
+nav li{                
+    display: inline-block;
+    margin: 0 20px;
+    font: 20px;
+}
+
+.active{           
     color: var(--aqua-color);
 }
 
-header nav a::before{     /* Adding Animation to navigation bar */
+.logo{          /* Styling the name Sarose */
+    font-size: 32px;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.logo:hover{
+    color: var(--aqua-color);
+}
+
+.menu-line{           /* Creating Humburger Menu */
+    height: 3px;
+    width: 20px;
+    background-color:white;
+    margin-bottom: 3px;
+}
+
+.menu{
+    cursor: pointer;
+    display: none;
+}
+
+.showMenu{         /* Show menu using JS */
+    display: block;
+}
+
+@media all and (max-width: 950px){    /* Making Responsive */
+    header nav{                      
+        flex-direction: column;            /* Navigation Bar */
+    }
+
+    nav li{
+        display: block;
+        padding: 10px 0;
+    }
+
+    ul{
+        text-align: center;
+        padding: 0;
+        display: none;
+    }
+
+    #name{
+        align-self: flex-start;       /* Moving Name to left corner */
+        margin: 10px 0px 0px 30px;
+    }
+
+    .menu{             /* align the Menu icon*/
+        display: block; 
+        position: absolute;
+        right: 20px;
+        top: 25px;
+    }
+
+    .container{                  /* aligning image first */
+        flex-direction: column-reverse;
+    }
+
+    .text-box .icon-box{ 
+        justify-content: space-around;
+    }
+
+    div .text-box{        /* Removing uneccassary margin space */
+        margin: 0px;
+    }
+
+    div .btn{            /* Responsive Buttons */
+        display: flex;
+        flex-direction: column;
+    }
+
+    .btn .downloadBtn{      /* Drop space between Buttons */
+        margin-bottom:15px;
+    }
+}
+
+header nav ul a::before{     /* Adding Animation to navigation bar */
     content: "";
     width: 0px;
-    height: 2.5px;
+    height: 3px;
     position: absolute;
     bottom: -8px;
     background-color: white;
     transition: .3s;
 }
 
-header nav .active::before{
+header nav ul .active::before{
     background-color: var(--aqua-color);
 }
 
 header nav a:hover::before{
-    width: 50px;
+    width: 60px;
 }
 
 .img-box{              /* Styling Image box */
     width:560px;
     height: 560px;
     position: relative;
-    margin-left: 100px;
+    margin-left: 20px;
     display:flex;
     justify-content: center;
     align-items: center;
+    
 }
 
 .img-box img{                  /* Styling Image */
@@ -88,7 +162,7 @@ header nav a:hover::before{
 }
 
 .text-box{         /* Styling the Center text */
-    width: 75%;
+    width: 60%;
     margin: 20px 0px 0px 80px;
     text-align:start;
     position: relative;
@@ -140,9 +214,10 @@ header nav a:hover::before{
 }
 
 .text-box .downloadBtn{     /* Download Buttons */
-    margin-right: 15px;
     color: black;
+    margin-right: 15px;
 }
+
 
 .text-box button::before{  /* Animating Buttons */
     content: "";
@@ -210,23 +285,3 @@ header::before,        /* Page loading Animation */
 .img-box::before{
     animation-delay:2s;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
