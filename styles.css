@@ -150,7 +150,7 @@ header nav a:hover::before{
     color: white;
 }
 
-.text-box .icon-box i:hover{     /* Animating Social Media Icon */
+.text-box .icon-box i:hover{     /* Hovering Social Media Icon */
     background-color: white;
     color: var(--backgroud-color);
 }
@@ -196,12 +196,6 @@ header nav a:hover::before{
 .text-box .downloadBtn:hover::before{
     left: 0;
     width: 0;
-}
-
-@keyframes laodAnimation {
-    100%{
-        width: 0;
-    }
 }
 
 .about-page{               /* 2nd Page (About Section) */
@@ -339,7 +333,14 @@ header nav a:hover::before{
   .btn-3 span:hover:after {
     width: 100%;
 }
-  
+
+
+
+@keyframes laodAnimation {
+    100%{
+        width: 0;
+    }
+}
 
 header::before,        /* Page loading Animation */
 .text-box::before,
@@ -408,7 +409,7 @@ header::before,        /* Page loading Animation */
         margin-bottom:30px;
     }
 
-    .about-page{             
+    .about-page{             /* made responsive AboutMe page */
         flex-direction: column;
     }
 
