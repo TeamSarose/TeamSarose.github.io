@@ -306,7 +306,7 @@ header nav a:hover::before{
 }
 
 .project-page h2{        /* Heading */
-    margin-bottom: 4rem;
+    margin-bottom: 5rem;
     padding-top: 2rem;
     text-align: center;
     color: white;
@@ -333,8 +333,8 @@ header nav a:hover::before{
 }
 
 .project-box img{
-    width: 150%;
-    height: 150%;
+    width: 350px;
+    height: 350px;
     transition: .5s ease;
 }
 
@@ -389,6 +389,10 @@ header nav a:hover::before{
     font-size: 1.5rem;
     color:black;
 }
+
+/* 5th Page (Contact) */
+
+
 
 
 
