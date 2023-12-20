@@ -93,7 +93,7 @@ header nav a:hover::before{
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    min-height: 90vh;
+    min-height: 100vh;
 }
 
 .img-box{              /* Styling Image box */
@@ -244,6 +244,153 @@ header nav a:hover::before{
     font-size: 1rem;
     margin: 2rem 0 3rem;
 }
+
+
+.service-page{           /* 3rd Page (services showcase) */      
+    min-height: 100vh;
+    background-color: var(--backgroud-color);
+}
+
+.service-container{          /* Project container */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.service-container .service-box{
+    flex: 1 1 15rem;
+    background-color: #2d3749;
+    padding: 3rem 2rem 4rem;
+    margin: 0 40px 0 40px;
+    border-radius: 2rem;
+    text-align: center;
+    border: .2rem solid #7f8796;
+    transition: .5s ease;
+}
+
+.service-container .service-box:hover{      /* Adding animation */
+    border-color: var(--aqua-color) ;
+    transform: scale(1.05);
+}
+
+.service-page h2{      /* heading */
+    margin-bottom: 5rem;
+    text-align: center;
+    color: white;
+}
+
+.service-page .heading span{
+    color: var(--aqua-color);
+}
+
+.service-box h3{
+    color: white;
+}
+
+.service-box p{
+    color: white;
+    font-weight: bold;
+}
+
+.service-container .bx-code-alt , .bxl-sketch , .bx-news{       /* styling icons */
+    color: var(--aqua-color);
+    font-size: 3rem;
+}
+
+
+.project-page{           /* 4th Page (Project showcase) */      
+    min-height: 100vh;
+    background-color: #323946;
+}
+
+.project-page h2{        /* Heading */
+    margin-bottom: 4rem;
+    padding-top: 2rem;
+    text-align: center;
+    color: white;
+}
+
+.project-page .heading span{
+    color: var(--aqua-color);
+}
+
+.project-container{         /* Project container */
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    align-items: center;
+    gap: 2.5rem;
+}
+
+.project-container .project-box{
+    position: relative;
+    border-radius: 2rem;
+    box-shadow: 0 0 1rem var(--aqua-color);
+    overflow: hidden;
+    display: flex;
+    margin: 0 40px 0 40px;
+}
+
+.project-box img{
+    width: 150%;
+    height: 150%;
+    transition: .5s ease;
+}
+
+.project-box:hover img{
+    transform: scale(1.1);
+}
+
+
+.project-box .project-layer{        /* Content of Project */
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, .1), var(--backgroud-color));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 0 4rem;
+    transform: translateY(100%);
+    transition: .5s ease;
+}
+
+.project-box:hover .project-layer{
+    transform: translateY(0%);
+
+}
+
+.project-layer h4{        /* Project Description Text */
+    font-size: 2rem;
+    color: white;
+}
+
+.project-layer p{
+    font-size: 1.1rem;
+    margin: .3rem 0 1rem;
+    color: white;
+}
+
+.project-layer a{         /* Designing link icon */
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 3rem;
+    height: 3rem;
+    background: white;
+    border-radius: 50%;
+}
+
+.project-layer a i{
+    font-size: 1.5rem;
+    color:black;
+}
+
+
 
 .custom-btn {        /* Animating Read More Button */
     width: 130px;
