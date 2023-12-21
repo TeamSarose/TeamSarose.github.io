@@ -16,11 +16,12 @@ body{             /* Main Body */
 
 header nav{  
     display: flex;               /*  Full Navigation Part */
-    background-color:var(--backgroud-color);
+    background-color:#323946;
     font-size: 23px;
     width: 100%;
     align-items: center;
     justify-content: space-around;
+    position: fixed;
 }
 
 nav a{                      /* Styling the Navigation link */
@@ -391,6 +392,60 @@ header nav a:hover::before{
 }
 
 /* 5th Page (Contact) */
+
+.contact-page{
+    min-height: 100vh;
+    background-color: var(--backgroud-color);
+}
+
+.contact-page h2{      /* Haading */
+    margin-bottom: 3rem;
+    text-align: center;
+    color: white;
+}
+
+.contact-page h2 span{
+    color: var(--aqua-color);
+}
+
+.contact-page form{       /* Styling form */
+    max-width: 70rem;
+    margin: 1rem auto;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.contact-page form .input-box{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.contact-page form .input-box input,       /* Styling inputbox and textarea */
+.contact-page form textarea{
+    width: 100%;
+    padding: 1.4rem;
+    font-size: 1.5rem;
+    color: rgb(255, 255, 255);
+    background: #2e3441;
+    border-radius: .8rem;
+    margin: .7rem 0;
+}
+
+.contact-page form .input-box input{
+    width: 49%;
+}
+
+.contact-page form textarea{
+    resize: none;
+}
+
+.contact-page form .btn-3{
+    margin-top: 2rem;
+    cursor: pointer;
+}
+
+/* Footer */
 
 
 
