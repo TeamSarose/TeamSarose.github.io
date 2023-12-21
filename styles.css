@@ -22,6 +22,7 @@ header nav{
     align-items: center;
     justify-content: space-around;
     position: fixed;
+    z-index: 100;
 }
 
 nav a{                      /* Styling the Navigation link */
@@ -447,7 +448,38 @@ header nav a:hover::before{
 
 /* Footer */
 
+.footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 1rem 9%;
+    background-color:#323946;
+}
 
+.footer p{
+    color: white;
+    font-size: 1rem;
+}
+
+.footer .footer-icontop a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: .5rem;
+    background: #05688f;
+    border-radius: 0.5rem;
+    transition: .5s ease;
+}
+
+.footer-icontop a:hover{
+    box-shadow: 0 0 1rem var(--aqua-color);
+}
+
+.footer .footer-icontop a i{
+    font-size: 1.2rem;
+    color: white;
+}
 
 
 
