@@ -491,8 +491,8 @@ header nav a:hover::before{
 }
 /* Footer css ends */
 
-
-.custom-btn {        /* Animating Read More Button */
+/* Animating Read More Button */
+.custom-btn {        
     width: 130px;
     height: 40px;
     color: #fff;
@@ -611,7 +611,7 @@ header::before,
 .img-box::before{
     animation-delay:2s;
 }
-/* Page loading Animation starts */
+/* Page loading Animation ends */
 
 
 /* Media Query for make responsive  */
@@ -1040,6 +1040,11 @@ header::before,
 }
 
 @media screen and (max-width: 400px){
+    .home-page .text-box,
+    .home-page .img-box{
+        margin: 15px 10px 0 10px;
+    }
+    
     .home-page .text-box h1{
         font-size: 25px;
     }
@@ -1125,8 +1130,13 @@ header::before,
     }
 
     .footer p{
-        font-size: 14px;
+        font-size: 13px;
     }
+
+    .footer .footer-icontop a i{
+        font-size: 1rem;
+    }
+
 }
 
 @media screen and (max-width: 320px){
