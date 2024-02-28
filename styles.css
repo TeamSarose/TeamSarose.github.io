@@ -140,7 +140,7 @@ header nav a:hover::before{
     width: 320px;
     display: flex;
     justify-content: space-between;
-    margin: 25px 0px;
+    margin: 25px 0;
 }
 
 .text-box .icon-box a i{
@@ -927,7 +927,8 @@ header::before,
     }
 
     .project-page .project-container .project-box .project-layer{
-        padding: 0 2rem;
+        width: 100%;
+        padding: 0;
     }
 
     .project-page .project-container .project-box .project-layer h4{
@@ -1007,10 +1008,6 @@ header::before,
     .project-page .project-container .project-box img{
         width: 100%;
         height: 100%;
-    }
-
-    .project-page .project-container .project-box .project-layer{
-        padding: 0 2rem;
     }
 
     .project-page .project-container .project-box .project-layer h4{
@@ -1096,10 +1093,6 @@ header::before,
         height: 100%;
     }
 
-    .project-page .project-container .project-box .project-layer{
-        padding: 0 2rem;
-    }
-
     .project-page .project-container .project-box .project-layer h4{
         font-size: 1.5rem;
     }
@@ -1139,6 +1132,21 @@ header::before,
 
 }
 
+@media screen and (max-width: 370px){
+    .text-box .icon-box{      /* Reduce space between social media icons*/
+        width: 220px;
+    }
+
+    .footer p{
+        font-size: 12px;
+    }
+
+    .footer .footer-icontop a i{
+        font-size: 12px;
+    }
+
+}
+
 @media screen and (max-width: 320px){
     .home-page .text-box h1{
         font-size: 20px;
@@ -1148,8 +1156,22 @@ header::before,
         font-size: 13px;
     }
 
+    .home-page img{
+        height: 280px;
+        width: 280px; 
+    }
+
+    .text-box .icon-box{     
+        width: 220px;
+    }
+
     .about-page .about-img{
         padding-top: 2rem;
+    }
+
+    .about-page img{
+        height: 280px;
+        width: 280px; ;
     }
 
     .about-page .about-content h2{
@@ -1191,10 +1213,6 @@ header::before,
         height: 100%;
     }
 
-    .project-page .project-container .project-box .project-layer{
-        padding: 0 2rem;
-    }
-
     .project-page .project-container .project-box .project-layer h4{
         font-size: 1.5rem;
     }
@@ -1225,11 +1243,15 @@ header::before,
     }
 
     .footer p{
-        font-size: 14px;
+        font-size: 10px;
     }
 
-    .footer .footer-icontop a{
+    .footer .footer-icontop a{ 
         padding: .5rem;
+    }
+
+    .footer .footer-icontop a i{
+        font-size: 10px;
     }
 
 }
